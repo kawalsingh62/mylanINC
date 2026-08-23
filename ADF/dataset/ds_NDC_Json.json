@@ -1,0 +1,26 @@
+{
+	"name": "ds_NDC_Json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_NDC",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"NDC_search": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@concat('drug/ndc.json',dataset().NDC_search)",
+					"type": "Expression"
+				}
+			}
+		},
+		"schema": {}
+	}
+}
