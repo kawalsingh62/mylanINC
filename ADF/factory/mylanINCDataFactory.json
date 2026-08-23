@@ -1,0 +1,15 @@
+{
+	"name": "mylanINCDataFactory",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0d535f85-a43f-44a6-8c07-f2e2bf5a72ee",
+		"tenantId": "1170d55b-3d87-4d92-822c-430ffb866dd5"
+	}
+}
